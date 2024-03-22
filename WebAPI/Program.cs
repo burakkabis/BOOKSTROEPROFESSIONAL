@@ -16,6 +16,9 @@ builder.Services.AddSingleton<IBookDal, EfBBookDal>();
 builder.Services.AddSingleton<IPremiumService, PremiumManager>();
 builder.Services.AddSingleton<IPremiumDal, EfPremiumDal>();
 
+builder.Services.AddSingleton<IBookStoreService, BookStoreManager>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
